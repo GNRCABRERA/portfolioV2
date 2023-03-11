@@ -417,4 +417,9 @@ form input::placeholder{
         max-width: 300px;
     }
 
+    .wrapper .nav--bar .social--media  a{
+        width: 20px;
+        
+    }
+
 }
