@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/c1b376c0aa.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="home" class="wrapper">
+        <div class="nav--bar">
+           <ul>
+                <li><a href="#home"><i class="fa-solid fa-house-chimney"></i><span> Home</span></a></li>
+                <li><a href="#about"><i class="fa-solid fa-user"></i><span> About Me</span></a></li>
+                <li><a href="#projects"><i class="fa-solid fa-sitemap"></i><span> Projects</span></a></li>
+                <li><a href="#contact"><i class="fa-regular fa-envelope"></i><span> Contact Me</span></a></li>
+           </ul>
+
+           <div class="social--media">
+                <a href="https://github.com/GNRCABRERA"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gabriel-cabrera-a391aa20b/"><i class="fa-brands fa-linkedin-in"></i></a>
+           </div>
+        </div>
+        <div class="div--main">
+            <div class="div--logo">
+                <img class="logo--image"src="./images/photo.png" width="250" height="250">
+            </div>
+            <h1 class="main--text font1">Frontend, Backend, & Fullstack Developer</h1>
+            <h2 class="main--text font1">I code with passion and I love what I do</h2>
+            <div class="div--devices">
+                <img class="devices--image" src="./images/main-devices.svg">
+            </div>
+            <div class="div--about" id="about">
+                <h1 class="text--about">Hi, I'm Gab. Nice to meet you!</h1>
+                <h3 class="text--about">I was in highschool when I fell in love with technology and how they are being made and presented through a computer. My first ever language that I have learned was HTML. I am passionate and eager learner. I am continuously working on improving myself one step a time. </h3>
+            </div>
+            <div class="div--tools">
+                <h1>Tools</h1>
+                <div class="card">
+                    <h2 class="card--title">Frontend</h2>
+                    <h3>HTML</h3>
+                    <h3>CSS</h3>
+                    <h3>Bootstrap</h3>
+                    <h3>React</h3>
+                </div>
+                <div class="card">
+                    <h2 class="card--title">Backend</h2>
+                    <h3>Javascript</h3>
+                    <h3>Node.JS</h3>
+                    <h3>Express.JS</h3>
+                    <h3>MongoDB</h3>
+                    <h3>Git</h3>
+                    <h3>Github</h3>
+                    <h3>Gitlab</h3>
+                </div>
+            </div>
+            <div class="projects--main" id="projects">
+                    <h1>My Projects</h1>
+                    <h3>Here are the projects that I've worked on.</h3>
+                <div class="projects--grid">
+                    <div class="column">
+                        <figure class="project">
+                            <img class="project--img" src="./images/damitco.png" width="415" height="277">
+                            <figcaption class="overlay">
+                                <h1 class="project--text">Simple and Responsive E-Commerce Website built using MERN stack</h1>
+                                <a class="project--button" href="https://capstone-3-e-commerce-zeta.vercel.app/">Visit</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="contact--main" id="contact">
+                <h1 class="font1">Interested in building a project with me?</h1>
+                <h3>I am always open to discussing projects and partnership opportunities</h3>
+                <div class="contact--container">
+                    <form action="https://formsubmit.co/gnrcabrera0426@gmail.com" method="POST">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="fullName" id="name" placeholder="Full Name" class="input--height radius1" required>
+                        <input type="email" name="email" id="email" placeholder="Email" class="input--height radius1" required>
+                        <textarea class="tArea radius1" id="message" rows="4" placeholder="Enter Details here"></textarea>
+                        <button type="submit" class="form--button" onsubmit="message()">Send</button>
+                        <div class="message">
+                            <div class="success" id="success">Message has been sent successfully!</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
