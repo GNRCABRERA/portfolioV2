@@ -192,14 +192,22 @@ font-weight: bolder;
     justify-content: center;
     margin: auto;
     margin-top: 50px;
+    justify-content: space-around;
 }
 
-.project{
+.project, .project--none{
     position: relative;
     width: 415px;
     height: 277px;
     margin-bottom: 100px;
 }
+
+.project--none{
+    padding-top: 100px;
+    border: 5px solid black;
+    border-radius: 16px;
+}
+
 
 .overlay{
     position: absolute;
@@ -209,14 +217,18 @@ font-weight: bolder;
     right: 0;
     height: 100%;
     width: 100%;
-    opacity: 0;
+    display: none;
     transition: 0.3 ease;
     background-color: #013F4E;
     border-radius: 12px;
 }
 
 .project:hover .overlay{
-    opacity: 1;
+    display: unset;
+}
+
+.project--none:hover .overlay {
+    display: unset;
 }
 
 .project--img{
@@ -324,6 +336,19 @@ form input::placeholder{
     }
 }
 
+@media screen and (max-width: 1439px){
+
+    .projects--grid{
+        flex-direction: column;
+    }
+
+    .project, .project--none{
+        margin: 30px auto 30px auto;
+        
+    }
+
+}
+
 @media screen and (max-width: 1023px) {
 
 
@@ -399,9 +424,13 @@ form input::placeholder{
         padding: 3rem;
     }
 
-    .project{
+    .project, .project--none{
         width: 300px;
         height: 250px;
+    }
+
+    .alignCenter{
+        padding-top: 30px;
     }
 
     .project--img{
